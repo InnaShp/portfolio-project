@@ -27,6 +27,9 @@ nav a  {
   color: var(--secondary-color);
   font-size: 16px;
 }
+nav ul {
+  padding: 0;
+}
 nav li {
   list-style: none;
   display: inline;
@@ -88,7 +91,7 @@ nav li.active a {
 }
 .content-container .inna-photo {
   max-width: 500px;
-  border-radius: 20px;
+  border-radius: 50%;
 }
 .btn-branding {
   background: var(--branding-color);
@@ -115,7 +118,7 @@ nav li.active a {
   border: 1px solid var(--branding-color);
 }
 .logo {
-  max-width: 200px;
+  max-height: 50px;
   
 }
 
@@ -132,9 +135,7 @@ nav li.active a {
     padding: 0;
     margin: 0;
   }
-  .logo {
-    max-width: 50px;
-  }
+  
   .hero {
     padding: 80px 20px;
   }
