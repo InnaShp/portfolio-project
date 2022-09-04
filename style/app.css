@@ -7,20 +7,20 @@
   --default-font-family: 'Poppins', sans-serif;
 }
 
+
 body {
   font-family: var(--default-font-family);
 }
-h1, h2, h3, h4, h5, h6{
+h1, h2, h3 {
   font-family: var(--heading-font-family);
   color: #252c33;    
 }
 h2 {
   font-size: 64px;
 }
-h4 {
+h3 {
   font-size: 48px;
 }
-
 p  {
   font-size: 16px;
   line-height: 30px;
@@ -33,6 +33,10 @@ nav a  {
   color: var(--secondary-color);
   font-size: 16px;
 }
+nav a:hover,
+nav li.active a {
+  color: var(--branding-color);
+}
 nav ul {
   padding: 0;
 }
@@ -42,34 +46,8 @@ nav li {
   line-height: 44px;
   margin-left: 15px;
 }
-nav a:hover,
-nav li.active a {
-  color: var(--branding-color);
-}
-
-.hero {
-  background: var(--background-color);
-  text-align: center;
-  padding: 100px 20px;
-}
-.hero h1 {
-  font-size: 96px;
-  line-height: 144px;
-
-}
-.hero h2 {
-  font-size: 24px;
-  line-height: 36px;
-}
 
 
-.hero p {
-  color: var(--secondary-color);
-  font-weight: bold; 
-  font-size: 36px;
-  margin: 0;
-  line-height: 30px;
-}
 footer {
   margin: 60px 0;;
 }
@@ -86,20 +64,6 @@ footer .email-link {
 footer .email-link:hover {
   color: var(--branding-color);
 }
-footer .social-links a {
-  color: #7aa5d2;
-  border: 1px solid var(--branding-color);
-  border-radius: 50%;
-  font-size: 18px;
-  padding: 10px 14px;
-  margin: 0 20px;
-  transition: all 150ms ease-in-out;
-
-}
-footer .social-links a:hover {
-  color: white;
-  background: var(--branding-color);
-}
 footer .github-link {
   text-decoration: none;
   color: var(--branding-color);
@@ -108,62 +72,21 @@ footer .github-link {
 footer .github-link:hover {
   color: #7aa5d2bd;
 }
-.project-description {
-  margin: 120px 60px;
-}
-.content-container {
-  padding: 60px 20px;
-}
-.content {
-  margin: 30px;
-}
-.content h1 {
-  font-size: 64px;
-  line-height: 80px;
-}
-.content h2 {
-  font-family: var(--default-font-family);
-  font-size: 18px;
-  font-weight: bold;
-}
-.content h3 {
-  font-size: 24px;
-  font-weight: bold;
-  line-height: 1.5;
-  margin: 0;
-  font-family: var(--default-font-family);
-}
-.content .weather-and-maltese-projects img {
-  
-  
-}
-.content-container .inna-photo {
-  max-width: 500px;
+footer .social-links a {
+  color: #7aa5d2;
+  border: 1px solid var(--branding-color);
   border-radius: 50%;
+  font-size: 18px;
+  padding: 10px 14px;
+  margin: 0 20px;
+  transition: all 150ms ease-in-out;
 }
-.content-container .skills-box {
-  max-width: 700px;
-  margin: 0 auto;
+footer .social-links a:hover {
+  color: white;
+  background: var(--branding-color);
 }
 
-.content .contact-links {
-  color: #7aa5d2;
-  font-size: 20px;
-}
-.content .contact-links a {
-  text-decoration: none;
-  color: var(--secondary-color);
-}
-.content .contact-links a:hover {
-  color: var(--branding-color);
-} 
-.content .contact-box {
-  border: 2px solid var(--background-color);
-  border-radius: 10px;
-  padding: 50px;
-  max-width: 800px;
-  margin: 0 auto;
-}
+
 .btn-branding {
   background: var(--branding-color);
   border-radius: 4px;
@@ -188,18 +111,96 @@ footer .github-link:hover {
 .btn-branding-outline:hover {
   border: 1px solid var(--branding-color);
 }
+
+
+.content-container {
+  padding: 60px 20px;
+}
+.content-container .inna-photo {
+  max-width: 500px;
+  border-radius: 50%;
+}
+.content-container .skills-box {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+
+.content {
+  margin: 30px;
+}
+.content h1 {
+  font-size: 64px;
+  line-height: 80px;
+}
+.content h2 {
+  font-family: var(--default-font-family);
+  font-size: 18px;
+  font-weight: bold;
+}
+.content h3 {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1.5;
+  margin: 0;
+  font-family: var(--default-font-family);
+}
+.content .contact-box {
+  border: 2px solid var(--background-color);
+  border-radius: 10px;
+  padding: 50px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.content .contact-links {
+  color: #7aa5d2;
+  font-size: 20px;
+}
+.content .contact-links a {
+  text-decoration: none;
+  color: var(--secondary-color);
+}
+.content .contact-links a:hover {
+  color: var(--branding-color);
+} 
+
+
+.hero {
+  background: var(--background-color);
+  text-align: center;
+  padding: 100px 20px;
+}
+.hero h1 {
+  font-size: 96px;
+  line-height: 144px;
+
+}
+.hero h2 {
+  font-size: 24px;
+  line-height: 36px;
+}
+.hero p {
+  color: var(--secondary-color);
+  font-weight: bold; 
+  font-size: 36px;
+  margin: 0;
+  line-height: 30px;
+}
+
+
 .logo {
   max-height: 50px;
 }
-
+.project-description {
+  margin: 120px 60px;
+}
 
 
 @media (max-width: 900px) {
   h2 {
     font-size: 44px;
   }
-  nav  {
-    
+  nav {
     padding: 0;
   }
   nav ul {
@@ -212,22 +213,8 @@ footer .github-link:hover {
   footer .email-link {
     font-size: 22px;
   }
-  .hero {
-    padding: 80px 20px;
-  }
-  .hero h1 {
-    font-size: 44px;
-    line-height: 1;
-    margin: 20px 0;
-  }
-  .project-description {
-    margin: 0;
-    text-align: center;
-  }
-  .content-container {
-    padding: 80px 20px 0;
-    text-align: center;
-  }
+  
+  
   .content {
     margin: 0;
   }
@@ -242,18 +229,37 @@ footer .github-link:hover {
   .content .contact-box a {
     font-size: 16px;
   }
-
+  
+  
+  .content-container {
+    padding: 80px 20px 0;
+    text-align: center;
+  }
+  .content-container h3 {
+    font-size: 36px;
+  }
   .content-container .inna-photo {
     max-width: 90%;
     margin-top: 50px;
   }
+  .content-container .skills-box img {
+    max-width: 30px;
+  }
   .content-container .skills-box p {
     font-size: 13px;
   }
-  .content-container .skills-box img{
-    max-width: 30px;
+  
+
+  .hero {
+    padding: 80px 20px;
   }
-  .content-container h4 {
-    font-size: 36px;
+  .hero h1 {
+    font-size: 44px;
+    line-height: 1;
+    margin: 20px 0;
   }
+  .project-description {
+    margin: 0;
+    text-align: center;
+  } 
 }
