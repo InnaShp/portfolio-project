@@ -137,6 +137,11 @@ footer .github-link:hover {
   max-width: 500px;
   border-radius: 50%;
 }
+.content-container .skills-box {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
 .content .contact-links {
   color: #7aa5d2;
   font-size: 20px;
@@ -197,6 +202,9 @@ footer .github-link:hover {
     padding: 0;
     margin: 0;
   }
+  footer p {
+    font-size: 13px;
+  }
   footer .email-link {
     font-size: 22px;
   }
@@ -213,7 +221,7 @@ footer .github-link:hover {
     text-align: center;
   }
   .content-container {
-    padding: 80px 20px;
+    padding: 80px 20px 0;
     text-align: center;
   }
   .content {
@@ -223,8 +231,25 @@ footer .github-link:hover {
     font-size: 44px;
     line-height: 1;
   }
+  .content .contact-box {
+    padding: 20px;
+    text-align: left;
+  }
+  .content .contact-box a {
+    font-size: 16px;
+  }
+
   .content-container .inna-photo {
     max-width: 90%;
     margin-top: 50px;
+  }
+  .content-container .skills-box p {
+    font-size: 13px;
+  }
+  .content-container .skills-box img{
+    max-width: 30px;
+  }
+  .content-container h4 {
+    font-size: 36px;
   }
 }
