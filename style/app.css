@@ -133,6 +133,10 @@ footer .github-link:hover {
   margin: 0;
   font-family: var(--default-font-family);
 }
+.content .weather-and-maltese-projects img {
+  
+  
+}
 .content-container .inna-photo {
   max-width: 500px;
   border-radius: 50%;
